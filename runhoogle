@@ -1,0 +1,6 @@
+#!/bin/sh
+cmd=$1
+shift 1
+. ~/.nix-profile/etc/profile.d/nix.sh && \
+    exec nix-shell -p "haskellPackages.ghcWithHoogle (pkgs: with pkgs; [$*])" \
+                   --command "$cmd"
