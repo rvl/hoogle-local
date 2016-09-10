@@ -1,6 +1,0 @@
-#!/bin/bash -e
-
-. ~/.nix-profile/etc/profile.d/nix.sh && \
-    for i in "$@"; do \
-        nix-build '<nixpkgs>' -Q -j4 -A pkgs.haskellPackages.$i; \
-    done
