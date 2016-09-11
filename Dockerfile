@@ -268,7 +268,16 @@ RUN ./hinst time-recurrence \
             warp \
             yaml \
             zippers \
-            zlib
+            zlib \
+            x509 \
+            x509-store \
+            x509-system \
+            filemanip \
+            servant \
+            servant-server \
+            servant-client \
+            servant-blaze \
+            amqp
 
 ENV PORT 8687
 EXPOSE $PORT

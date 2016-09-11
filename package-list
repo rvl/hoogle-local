@@ -10,6 +10,7 @@ abstract-deque
 abstract-par
 adjunctions
 aeson
+amqp
 async
 attempt
 attoparsec
@@ -74,12 +75,12 @@ either
 enclosed-exceptions
 errors
 exceptions
-exceptions
 extensible-exceptions
 failure
 fast-logger
 fgl
 file-embed
+filemanip
 fingertree
 fmlist
 foldl
@@ -180,6 +181,10 @@ scalpel
 scotty
 semigroupoids
 semigroups
+servant
+servant-blaze
+servant-client
+servant-server
 shake
 shakespeare
 shelly
@@ -225,6 +230,9 @@ vector
 void
 wai
 warp
+x509
+x509-store
+x509-system
 yaml
 zippers
 zlib
