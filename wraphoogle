@@ -1,2 +1,0 @@
-#!/bin/sh
-cat package-list | exec xargs ./runhoogle "$1"
