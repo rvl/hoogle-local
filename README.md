@@ -3,7 +3,7 @@ be queried on your local machine.
 
 To rebuild the docker image, run:
 
-    docker load -i `nix-build`
+    nix-build && ./result
 
 To run the Hoogle server:
 
