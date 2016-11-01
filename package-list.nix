@@ -1,233 +1,261 @@
 haskellPackages:
 with haskellPackages; [
-  Boolean
-  HTTP
-  HUnit
-  IfElse
-  MemoTrie
-  MissingH
-  MonadCatchIO-transformers
-  QuickCheck
-  abstract-deque
-  abstract-par
-  adjunctions
-  aeson
-  async
-  attempt
-  attoparsec
-  attoparsec-conduit
-  attoparsec-enumerator
-  base-unicode-symbols
-  base16-bytestring
-  base64-bytestring
-  basic-prelude
-  bifunctors
-  bindings-DSL
-  blaze-builder
-  blaze-builder-conduit
-  blaze-builder-enumerator
-  blaze-html
-  blaze-markup
-  blaze-textual
-  bool-extras
-  byteable
-  byteorder
-  bytes
-  bytestring-mmap
-  case-insensitive
-  cassava
-  categories
-  cereal
-  cereal-conduit
-  charset
-  chunked-data
-  classy-prelude
-  classy-prelude-conduit
-  cmdargs
-  comonad
-  comonad-transformers
-  compdata
-  composition
-  compressed
-  cond
-  conduit
-  conduit-combinators
-  conduit-extra
-  configurator
-  constraints
-  contravariant
-  convertible
-  cpphs
-  criterion
-  cryptohash
-  css-text
-  curl
-  data-checked
-  data-default
-  data-fix
-  derive
-  distributive
-  dlist
-  dlist-instances
-  dns
-  doctest
-  doctest-prop
-  either
-  enclosed-exceptions
-  errors
-  exceptions
-  exceptions
-  extensible-exceptions
-  failure
-  fast-logger
-  fgl
-  file-embed
-  fingertree
-  fmlist
-  foldl
-  free
-  fsnotify
-  ghc-paths
-  graphviz
-  groups
-  hamlet
-  hashable
-  hashtables
-  haskell-lexer
-  haskell-src
-  haskell-src-exts
-  hslogger
-  hspec
-  hspec-expectations
-  hspec-wai
-  html
-  http-client
-  http-date
-  http-types
-  io-memoize
-  io-storage
-  io-streams
-  json
-  kan-extensions
-  keys
-  language-c
-  lattices
-  lens
-  lens-action
-  lens-aeson
-  lens-datetime
-  lens-family
-  lens-family-core
-  lifted-async
-  lifted-base
-  linear
-  list-extras
-  list-t
-  logict
-  machines
-  mime-mail
-  mime-types
-  mmorph
-  monad-control
-  monad-coroutine
-  monad-loops
-  monad-par
-  monad-par-extras
-  monad-stm
-  monadloc
-  mono-traversable
-  monoid-extras
-  mtl
-  multimap
-  multirec
-  network
-  newtype
-  numbers
-  operational
-  optparse-applicative
-  pandoc
-  parallel
-  parallel-io
-  parsec
-  parsers
-  pipes
-  pipes-attoparsec
-  pipes-binary
-  pipes-bytestring
-  pipes-concurrency
-  pipes-extras
-  pipes-group
-  pipes-http
-  pipes-network
-  pipes-parse
-  pipes-safe
-  pipes-text
-  pointed
-  posix-paths
-  postgresql-simple
-  pretty-show
-  profunctors
-  random
-  reducers
-  reflection
-  regex-applicative
-  regex-base
-  regex-compat
-  regex-posix
-  resourcet
-  retry
-  safe
-  sbv
-  scalpel
-  scotty
-  semigroupoids
-  semigroups
-  shake
-  shakespeare
-  shelly
-  simple-reflect
-  singletons
-  speculation
-  split
-  spoon
-  stm
-  stm-chans
-  stm-stats
-  streaming
-  streaming-bytestring
-  strict
-  stringsearch
-  strptime
-  syb
-  system-fileio
-  system-filepath
-  tagged
-  tar
-  tardis
-  tasty
-  tasty-hspec
-  tasty-hunit
-  tasty-quickcheck
-  tasty-smallcheck
-  temporary
-  text
-  text-format
-  these
-  thyme
-  time-recurrence
-  total
-  transformers-base
-  turtle
-  uniplate
-  units
-  unix-compat
-  unordered-containers
-  uuid
-  vector
-  void
-  wai
-  warp
-  yaml
-  zippers
-  zlib
+
+Boolean
+HTTP
+HUnit
+IfElse
+MemoTrie
+MissingH
+QuickCheck
+abstract-deque
+abstract-par
+adjunctions
+aeson
+amqp
+apis
+async
+attempt
+attoparsec
+attoparsec-conduit
+attoparsec-enumerator
+base
+base-unicode-symbols
+base16-bytestring
+base64-bytestring
+basic-prelude
+bifunctors
+bindings-DSL
+blaze-builder
+blaze-builder-conduit
+blaze-builder-enumerator
+blaze-html
+blaze-markup
+blaze-textual
+bool-extras
+byteable
+byteorder
+bytes
+bytestring
+bytestring-mmap
+case-insensitive
+cassava
+categories
+cereal
+cereal-conduit
+charset
+chunked-data
+classy-prelude
+classy-prelude-conduit
+cmdargs
+comonad
+comonad-transformers
+compdata
+composition
+compressed
+cond
+conduit
+conduit-combinators
+conduit-extra
+configurator
+connection
+constraints
+containers
+contravariant
+convertible
+cpphs
+criterion
+cryptohash
+css-text
+curl
+data-checked
+data-default
+data-default-class
+data-fix
+derive
+distributive
+dlist
+dlist-instances
+dns
+doctest
+doctest-prop
+either
+enclosed-exceptions
+errors
+exceptions
+extensible-exceptions
+failure
+fast-logger
+fgl
+file-embed
+filemanip
+fingertree
+fmlist
+foldl
+free
+fsnotify
+fuzzcheck
+ghc-paths
+graphviz
+groups
+hakyll
+hamlet
+hashable
+hashtables
+haskell-lexer
+haskell-src
+haskell-src-exts
+here
+hslogger
+hspec
+hspec-expectations
+hspec-wai
+html
+http-client
+http-client-tls
+http-date
+http-types
+io-memoize
+io-storage
+io-streams
+json
+kan-extensions
+keys
+language-c
+lattices
+lens
+lens-action
+lens-aeson
+lens-datetime
+lens-family
+lens-family-core
+lifted-async
+lifted-base
+linear
+list-extras
+list-t
+logging
+logict
+machines
+mime-mail
+mime-types
+mmorph
+monad-control
+monad-coroutine
+monad-logger
+monad-loops
+monad-par
+monad-par-extras
+monad-stm
+monadloc
+mono-traversable
+monoid-extras
+mtl
+multimap
+multirec
+network
+network-simple
+newtype
+numbers
+operational
+optparse-applicative
+pandoc
+parallel
+parallel-io
+parsec
+parsers
+pipes
+pipes-attoparsec
+pipes-binary
+pipes-bytestring
+pipes-concurrency
+pipes-extras
+pipes-group
+pipes-http
+pipes-network
+pipes-parse
+pipes-safe
+pipes-shell
+pipes-text
+pointed
+posix-paths
+postgresql-simple
+pretty-show
+process
+profunctors
+random
+reducers
+reflection
+regex-applicative
+regex-base
+regex-compat
+regex-posix
+resourcet
+retry
+safe
+sbv
+scalpel
+scientific
+scotty
+semigroupoids
+semigroups
+servant
+servant-blaze
+servant-client
+servant-server
+shake
+shakespeare
+shelly
+simple-reflect
+singletons
+speculation
+split
+spoon
+stm
+stm-chans
+stm-stats
+streaming
+streaming-bytestring
+strict
+stringsearch
+strptime
+syb
+system-fileio
+system-filepath
+tagged
+tar
+tardis
+tasty
+tasty-hspec
+tasty-hunit
+tasty-quickcheck
+tasty-smallcheck
+temporary
+text
+text-format
+these
+thyme
+time
+time-recurrence
+tls
+total
+transformers
+transformers-base
+turtle
+uniplate
+units
+unix-compat
+unordered-containers
+uuid
+vector
+void
+wai
+warp
+x509
+x509-store
+x509-system
+yaml
+zippers
+zlib
+
 ]
