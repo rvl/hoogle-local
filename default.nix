@@ -51,6 +51,6 @@ in pkgs.writeScript "build.sh" ''
 
   # Set up a Dockerfile for the docker build of temp directory
   cp --no-preserve=mode ${dockerfile} tmp-Dockerfile
-  docker build -t jwiegley/hoogle-local -f tmp-Dockerfile .
+  docker build -t jwiegley/hoogle-local:latest -f tmp-Dockerfile .
   rm -rf tmp tmp-Dockerfile
 ''
