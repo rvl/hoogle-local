@@ -73,6 +73,7 @@ data-default
 data-default-class
 data-fix
 derive
+directory
 distributive
 dlist
 dlist-instances
@@ -89,6 +90,7 @@ fast-logger
 fgl
 file-embed
 filemanip
+filepath
 fingertree
 fmlist
 foldl
@@ -114,6 +116,7 @@ html
 http-client
 http-client-tls
 http-date
+http-media
 http-types
 io-memoize
 io-storage
@@ -152,7 +155,6 @@ mono-traversable
 monoid-extras
 mtl
 multimap
-multirec
 network
 network-simple
 newtype
@@ -233,6 +235,7 @@ tasty-smallcheck
 temporary
 text
 text-format
+text-show
 these
 thyme
 time
