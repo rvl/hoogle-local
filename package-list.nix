@@ -8,12 +8,12 @@ IfElse
 MemoTrie
 MissingH
 QuickCheck
+quickcheck-instances
 abstract-deque
 abstract-par
 adjunctions
 aeson
 amqp
-apis
 async
 attempt
 attoparsec
@@ -38,6 +38,7 @@ byteorder
 bytes
 bytestring
 bytestring-mmap
+bytestring-show
 case-insensitive
 cassava
 categories
@@ -50,7 +51,6 @@ classy-prelude-conduit
 cmdargs
 comonad
 comonad-transformers
-compdata
 composition
 compressed
 cond
@@ -72,7 +72,6 @@ data-checked
 data-default
 data-default-class
 data-fix
-derive
 directory
 distributive
 dlist
@@ -111,6 +110,8 @@ here
 hslogger
 hspec
 hspec-expectations
+hspec-megaparsec
+hspec-smallcheck
 hspec-wai
 html
 http-client
@@ -122,7 +123,9 @@ io-memoize
 io-storage
 io-streams
 json
+json-stream
 kan-extensions
+kdt
 keys
 language-c
 lattices
@@ -140,6 +143,7 @@ list-t
 logging
 logict
 machines
+megaparsec
 mime-mail
 mime-types
 mmorph
@@ -177,13 +181,14 @@ pipes-http
 pipes-network
 pipes-parse
 pipes-safe
-pipes-shell
 pipes-text
+pipes-zlib
 pointed
 posix-paths
 postgresql-simple
 pretty-show
 process
+process-extras
 profunctors
 random
 reducers
@@ -204,12 +209,16 @@ semigroups
 servant
 servant-blaze
 servant-client
+servant-docs
+servant-foreign
+servant-js
 servant-server
-shake
+# shake
 shakespeare
 shelly
 simple-reflect
 singletons
+smallcheck
 speculation
 split
 spoon
@@ -244,6 +253,7 @@ tls
 total
 transformers
 transformers-base
+trifecta
 turtle
 uniplate
 units
