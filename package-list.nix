@@ -94,8 +94,12 @@ fingertree
 fmlist
 foldl
 free
+free-functors
+free-vl
+freer-effects
 fsnotify
 fuzzcheck
+ghc-datasize
 ghc-paths
 graphviz
 groups
@@ -142,6 +146,7 @@ list-extras
 list-t
 logging
 logict
+machinecell
 machines
 megaparsec
 mime-mail
@@ -268,6 +273,7 @@ x509
 x509-store
 x509-system
 yaml
+z3
 zippers
 zlib
 
