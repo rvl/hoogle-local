@@ -1,6 +1,14 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ nixpkgs ? import <nixpkgs> {} }:
 
 let
+  # nixos-unstable as of 20170507
+  pkgs = import (nixpkgs.fetchFromGitHub {
+    owner = "NixOS";
+    repo = "nixpkgs";
+    rev = "c5badb123a2dd6e2b38dcd2ddbe73e13dc6b554f";
+    sha256 = "1ay1jy5xrb9cj8x7wz7a7l3zahyhx7m5yky4s206sjl5nrx0xggf";
+  }) {};
+
   hooglePort = "8687";
   hp = (pkgs.haskellPackages.override {
     overrides = self: super: {
