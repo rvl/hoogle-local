@@ -25,7 +25,7 @@ let
     FROM alpine:3.3
     COPY tmp /
     EXPOSE ${hooglePort}
-    CMD ["/bin/hoogle", "server", "--local", "-p", "${hooglePort}" ]
+    CMD ["/bin/hoogle", "server", "--host", "*", "--local", "-p", "${hooglePort}" ]
   '';
 in pkgs.writeScript "build.sh" ''
   #!/${pkgs.stdenv.shell} -e
@@ -34,16 +34,17 @@ in pkgs.writeScript "build.sh" ''
 
   # copy docs out of haskellPackages nix closure
   for thing in $(nix-store -qR ${hp}); do
-      echo "copying $thing"
-      find $thing -depth -print | egrep '\.(hoo|css|js|html|png)' | cpio -pvd tmp
+      echo "Copying docs $thing"
+      find $thing -depth -print | egrep '\.(hoo|css|js|html|png)' | cpio --quiet -pd tmp
   done
 
   # finds the store path of the hoogle local wrapper (not the best way)
   HOOGLE_LOCAL=$(dirname $(dirname $(readlink ${hp}/bin/hoogle)))
 
+  # Copy the hoogle server and runtime dependencies
   for thing in ${hp} ${hoogle} ${hp.haskellPackages.ghc.doc} $HOOGLE_LOCAL ${pkgs.glibc} ${pkgs.gmp} ${pkgs.zlib} ${pkgs.stdenv.shell}; do
-      echo "fully copying $thing"
-      find $thing -depth -print | cpio -pvd tmp
+      echo "Copying package $thing"
+      find $thing -depth -print | cpio --quiet -pud tmp
   done
 
   # install wrapper script in easy-to-inspect place
@@ -55,7 +56,7 @@ in pkgs.writeScript "build.sh" ''
 
   # naughty link fixup -- some browsers don't like file:/// links any more.
   # hoogle also edits the links to add /file prefix
-  find tmp -type f -name '*.html' -exec sed -i 's=file:///nix/store=/nix/store=g' '{}' ';'
+  find tmp -type f -name '*.html' -exec sed -i 's=file:///nix/store=/file/nix/store=g' '{}' ';'
 
   # Set up a Dockerfile for the docker build of temp directory
   cp --no-preserve=mode ${dockerfile} tmp-Dockerfile
