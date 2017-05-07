@@ -27,8 +27,6 @@ basic-prelude
 bifunctors
 bindings-DSL
 blaze-builder
-blaze-builder-conduit
-blaze-builder-enumerator
 blaze-html
 blaze-markup
 blaze-textual
@@ -52,7 +50,6 @@ cmdargs
 comonad
 comonad-transformers
 composition
-compressed
 cond
 conduit
 conduit-combinators
@@ -177,7 +174,6 @@ parsec
 parsers
 pipes
 pipes-attoparsec
-pipes-binary
 pipes-bytestring
 pipes-concurrency
 pipes-extras
@@ -187,7 +183,6 @@ pipes-network
 pipes-parse
 pipes-safe
 pipes-text
-pipes-zlib
 pointed
 posix-paths
 postgresql-simple
@@ -218,7 +213,7 @@ servant-docs
 servant-foreign
 servant-js
 servant-server
-# shake
+shake
 shakespeare
 shelly
 simple-reflect
@@ -253,7 +248,6 @@ text-show
 these
 thyme
 time
-time-recurrence
 tls
 total
 transformers
@@ -276,5 +270,4 @@ yaml
 z3
 zippers
 zlib
-
 ]

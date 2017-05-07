@@ -4,7 +4,7 @@ let
   hooglePort = "8687";
   hp = (pkgs.haskellPackages.override {
     overrides = self: super: {
-      hoogle_4_2_43 = super.hoogle_4_2_43.override {
+      hoogle = super.hoogle.override {
         mkDerivation = args: super.mkDerivation (args // {
           enableSharedExecutables = false;
           #configureFlags = [ "--ghc-option=-optl=-static" "--ghc-option=-optl=-pthread" ];
@@ -12,7 +12,7 @@ let
       };
     };
   }).ghcWithHoogle (import ./package-list.nix);
-  hoogle = hp.haskellPackages.hoogle_4_2_43;
+  hoogle = hp.haskellPackages.hoogle;
   dockerfile = pkgs.writeText "Dockerfile" ''
     FROM alpine:3.3
     COPY tmp /
